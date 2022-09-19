@@ -33,6 +33,13 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
+Cell["", "FileManagerTopSpacer",
+ CellGroupingRules->{"SectionGrouping", 99},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->290626070,ExpressionUUID->"49884503-4de6-4b97-aee8-847d6cb63ae2"],
+
+Cell[CellGroupData[{
+
 Cell[TextData[Cell[BoxData[
  InterpretationBox[
   TagBox[
@@ -54,24 +61,21 @@ Cell[TextData[Cell[BoxData[
     BaseStyle->{"Text"}],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Documentation"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Documentation"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"3b657e13-957e-4b19-a755-6e11efa48ef8"]], \
+   "Text"}]],ExpressionUUID->"28569521-edce-4e64-8ee2-9c1a2eb209ee"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDocumentationIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->443660273,ExpressionUUID->"81f26953-324a-4351-90df-4140082a28a8"],
+ CellID->106464210,ExpressionUUID->"1f3a1f83-e0b3-422f-9cd1-4c393bfabcef"],
 
 Cell[CellGroupData[{
 
@@ -96,24 +100,21 @@ Cell[TextData[Cell[BoxData[
     BaseStyle->{"Text"}],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Documentation\\English"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Documentation", "English"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"b1ff4e9d-6048-4cd2-9e7c-355bb29dc766"]], \
+   "Text"}]],ExpressionUUID->"4919b39d-3503-41d4-bbd2-1d59e47ff38e"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->30716499,ExpressionUUID->"dbdc14a1-bd36-43d4-acac-32901f401f4c"],
+ CellID->2829509,ExpressionUUID->"8ea6f495-93de-4531-a0e6-a939ed6071de"],
 
 Cell[CellGroupData[{
 
@@ -138,53 +139,46 @@ Cell[TextData[Cell[BoxData[
     BaseStyle->{"Text"}],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[2]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Documentation\\English\\Tutorials"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Documentation", "English", "Tutorials"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"3b396bd6-7ca0-47ed-b13a-b3a6dc002bf5"]], \
+   "Text"}]],ExpressionUUID->"405f8faa-180e-43cc-918a-e4098655c678"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->36619600,ExpressionUUID->"b9fdc9d0-4bdd-4537-b8b0-f0b84ee38576"],
+ CellID->30626459,ExpressionUUID->"a79c9783-cd66-489d-8c30-950a847764ff"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"SIUnits.nb\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Documentation\\English\\Tutorials\\SIUnits.nb"]]},
+     FileNameJoin[{
+       NotebookDirectory[], "Documentation", "English", "Tutorials", 
+       "SIUnits.nb"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[3]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Documentation\\English\\Tutorials\\SIUnits.nb"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Documentation", "English", "Tutorials", 
+    "SIUnits.nb"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->297097673,ExpressionUUID->"ea61a786-4035-4f4f-a246-29bb7b99a5d6"]
+ CellID->97535270,ExpressionUUID->"9b33f341-4cc6-43cb-9ac6-d6e904e74dd8"]
 }, Closed]]
 }, Closed]]
 }, Closed]],
@@ -211,176 +205,143 @@ Cell[TextData[Cell[BoxData[
     BaseStyle->{"Text"}],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-Kernel"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Kernel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"c7406c68-2d72-428d-8eb5-80bf854c06ad"]], \
+   "Text"}]],ExpressionUUID->"c9007eca-58f4-4ba9-9af5-8c00fc1a6f84"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerKernelIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->44359940,ExpressionUUID->"d3a247f7-13be-4799-9817-c919790b4c7b"],
+ CellID->457544415,ExpressionUUID->"9ca7ca95-3bcb-47ad-a20d-882931bcdf39"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"DimensionalAnalysis.wl\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\Kernel\\\
-DimensionalAnalysis.wl"]]},
+     FileNameJoin[{
+       NotebookDirectory[], "Kernel", "DimensionalAnalysis.wl"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\Kernel\
-\\DimensionalAnalysis.wl"]],
+  FileNameJoin[{
+    NotebookDirectory[], "Kernel", "DimensionalAnalysis.wl"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->288050929,ExpressionUUID->"52f1e34e-eb50-41fc-ae42-c1ab982be8f2"]
+ CellID->647439651,ExpressionUUID->"4f8861df-4d45-49d0-88ad-1053d27b31f6"]
 }, Closed]],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"LICENSE\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\LICENSE"]\
-]},
+     FileNameJoin[{
+       NotebookDirectory[], "LICENSE"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-LICENSE"]],
+  FileNameJoin[{
+    NotebookDirectory[], "LICENSE"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->231689759,ExpressionUUID->"6b9ff77d-17d9-4ba6-a100-8d7b7f8ca7a2"],
+ CellID->522226745,ExpressionUUID->"257f0f62-bee2-44b0-b957-047d64638eeb"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"PacletInfo.wl\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-PacletInfo.wl"]]},
+     FileNameJoin[{
+       NotebookDirectory[], "PacletInfo.wl"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-PacletInfo.wl"]],
+  FileNameJoin[{
+    NotebookDirectory[], "PacletInfo.wl"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerPacletInfoIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->142189696,ExpressionUUID->"949b7029-7fbe-4514-8a36-5a07689b92ae"],
+ CellID->430946652,ExpressionUUID->"dd581df4-b9cb-4c66-8d17-fd5be5eecfce"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"README.md\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\README.\
-md"]]},
+     FileNameJoin[{
+       NotebookDirectory[], "README.md"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\README.\
-md"]],
+  FileNameJoin[{
+    NotebookDirectory[], "README.md"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->135261684,ExpressionUUID->"5907d160-fbc2-4cd1-97e8-7354fb77116b"],
+ CellID->633899574,ExpressionUUID->"996a9d92-bb73-4346-8836-33ff99a5bbbf"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
    TemplateBox[{"\"ResourceDefinition.nb\"", 
-     PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-     "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-      File[
-      "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-ResourceDefinition.nb"]]},
+     FileNameJoin[{
+       NotebookDirectory[], "ResourceDefinition.nb"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  PacletResource`DefinitionNotebook`Private`NotebookRelativePath[
-  "C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\", 
-   File["C:\\Users\\burbery1\\Documents\\GitHub\\dimensional-analysis\\\
-ResourceDefinition.nb"]],
+  FileNameJoin[{
+    NotebookDirectory[], "ResourceDefinition.nb"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->264793483,ExpressionUUID->"f8eb80c8-f35e-44cf-9014-fab503c400cc"],
+ CellID->203612688,ExpressionUUID->"59e374cb-ce02-4b12-8c95-d3a1de941db3"],
 
 Cell["", "FileManagerBottomSpacer",
  CellGroupingRules->{"SectionGrouping", 100},
- TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->31839535,ExpressionUUID->"00608551-02fb-4b7e-8672-4af7670c8625"]
+ CellID->31839535,ExpressionUUID->"a713e693-f7ce-4352-8586-44692d00c0e2"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1286,6 +1247,7 @@ Cell[BoxData[
              DynamicBox[FEPrivate`FrontEndResource[
               "FEBitmaps", "IconizeCloser"],
               ImageSizeCache->{11., {2., 9.}}], False->
+             
              DynamicBox[FEPrivate`FrontEndResource[
               "FEBitmaps", "IconizeOpener"],
               ImageSizeCache->{11., {2., 9.}}]},
@@ -2770,9 +2732,8 @@ Cell[BoxData[
    TemplateBox[{"\"magnetic time constant\"", 
      RowBox[{"Entity", "[", 
        RowBox[{"\"PhysicalQuantity\"", ",", "\"MagneticTimeConstant\""}], 
-       "]"}], 
-     "\"Entity[\\\"PhysicalQuantity\\\", \\\"MagneticTimeConstant\\\"]\"", 
-     "\"physical quantity\""},
+       "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"MagneticTimeConstant\\\"]\"", "\"physical quantity\""},
     "Entity"], ",", 
    TemplateBox[{"\"moving time\"", 
      RowBox[{"Entity", "[", 
@@ -3398,9 +3359,8 @@ Cell[BoxData[
        RowBox[{"Entity", "[", 
          RowBox[{
           "\"PhysicalQuantity\"", ",", "\"FundamentalLatticeVector2\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"FundamentalLatticeVector2\\\"]\
-\"", "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"FundamentalLatticeVector2\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"third fundamental lattice vector\"", 
        RowBox[{"Entity", "[", 
@@ -4361,9 +4321,8 @@ Cell[BoxData[
      TemplateBox[{"\"Compton wavelength\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"ComptonWavelength\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"ComptonWavelength\\\"]\"", 
-       "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"ComptonWavelength\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"condensed matter physics angular wavenumber\"", 
        RowBox[{"Entity", "[", 
@@ -5577,8 +5536,7 @@ density\"",
      TemplateBox[{"\"semi\[Hyphen]principal axis length\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"SemiPrincipalAxisLength\""}],
-          "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"SemiPrincipalAxisLength\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"sound particle displacement\"", 
@@ -5756,9 +5714,8 @@ density\"",
      TemplateBox[{"\"first Townsend coefficient\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"TownsendCoefficient\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"TownsendCoefficient\\\"]\"", 
-       "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \\\"TownsendCoefficient\\\
+\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"track gauge\"", 
        RowBox[{"Entity", "[", 
@@ -6307,8 +6264,7 @@ proportionality factor\"",
        RowBox[{"Entity", "[", 
          RowBox[{
           "\"PhysicalQuantity\"", ",", "\"DifferentialRadarReflectivity\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"DifferentialRadarReflectivity\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"directional attenuation coefficient\"", 
@@ -6572,9 +6528,8 @@ proportionality factor\"",
      TemplateBox[{"\"volume cross section\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"VolumeCrossSection\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"VolumeCrossSection\\\"]\"", 
-       "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"VolumeCrossSection\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"volume scattering coefficient\"", 
        RowBox[{"Entity", "[", 
@@ -6838,9 +6793,8 @@ proportionality factor\"",
      TemplateBox[{"\"Compton wavelength\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"ComptonWavelength\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"ComptonWavelength\\\"]\"", 
-       "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"ComptonWavelength\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"condensed matter physics diffusion length\"", 
        RowBox[{"Entity", "[", 
@@ -7251,8 +7205,9 @@ proportionality factor\"",
      TemplateBox[{"\"luminosity distance\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminosityDistance\""}], 
-         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
-\\\"LuminosityDistance\\\"]\"", "\"physical quantity\""},
+         "]"}], 
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminosityDistance\\\"]\"", 
+       "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"maximum elevation\"", 
        RowBox[{"Entity", "[", 
@@ -7276,8 +7231,7 @@ proportionality factor\"",
        RowBox[{"Entity", "[", 
          RowBox[{
           "\"PhysicalQuantity\"", ",", "\"MeridionalRadiusOfCurvature\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"MeridionalRadiusOfCurvature\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"metallic radius\"", 
@@ -7535,9 +7489,8 @@ proportionality factor\"",
      TemplateBox[{"\"strain sensitivity\"", 
        RowBox[{"Entity", "[", 
          RowBox[{"\"PhysicalQuantity\"", ",", "\"StrainSensitivity\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \\\"StrainSensitivity\\\"]\"", 
-       "\"physical quantity\""},
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"StrainSensitivity\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"superconductor coherence length\"", 
        RowBox[{"Entity", "[", 
@@ -7600,7 +7553,8 @@ proportionality factor\"",
        RowBox[{"Entity", "[", 
          RowBox[{
           "\"PhysicalQuantity\"", ",", "\"ViscousCharacteristicLength\""}], 
-         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+         "]"}], 
+       "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"ViscousCharacteristicLength\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"volume spread rate\"", 
@@ -7969,8 +7923,7 @@ proportionality factor\"",
        RowBox[{"Entity", "[", 
          RowBox[{
           "\"PhysicalQuantity\"", ",", "\"ProductAreaMomentOfInertia\""}], 
-         "]"}], 
-       "\"Entity[\\\"PhysicalQuantity\\\", \
+         "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"ProductAreaMomentOfInertia\\\"]\"", "\"physical quantity\""},
       "Entity"], ",", 
      TemplateBox[{"\"transformer area product\"", 
@@ -8150,8 +8103,9 @@ Cell[BoxData[
       TemplateBox[{"\"angular wavelength\"", 
         RowBox[{"Entity", "[", 
           RowBox[{"\"PhysicalQuantity\"", ",", "\"AngularWavelength\""}], 
-          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
-\\\"AngularWavelength\\\"]\"", "\"physical quantity\""},
+          "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"AngularWavelength\\\"]\"", 
+        "\"physical quantity\""},
        "Entity"], "\[Rule]", "1"}], ",", 
      RowBox[{
       TemplateBox[{"\"anharmonicity constant\"", 
@@ -10178,8 +10132,8 @@ density\"",
      RowBox[{
       TemplateBox[{"\"total absorption coefficient\"", 
         RowBox[{"Entity", "[", 
-          
-          RowBox[{"\"PhysicalQuantity\"", ",", 
+          RowBox[{
+           "\"PhysicalQuantity\"", ",", 
             "\"TotalLinearAbsorptionCoefficient\""}], "]"}], 
         "\"Entity[\\\"PhysicalQuantity\\\", \
 \\\"TotalLinearAbsorptionCoefficient\\\"]\"", "\"physical quantity\""},
