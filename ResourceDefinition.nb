@@ -1131,16 +1131,14 @@ Cell[BoxData[
              PaneBox[GridBox[{
                 {
                  StyleBox[
-                  AdjustmentBox[
+                  StyleBox[
+                   AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
                    
-                   StyleBox["\<\"[\[FilledSmallSquare]]\"\>", 
-                    "ResourceFunctionIcon",
-                    
-                    FontColor->RGBColor[
+                   FontColor->RGBColor[
                     0.8745098039215686, 0.2784313725490196, 
                     0.03137254901960784]],
-                   BoxBaselineShift->-0.25,
-                   BoxMargins->{{0, 0}, {-1, -1}}],
                   ShowStringCharacters->False,
                   FontFamily->"Source Sans Pro Black",
                   FontSize->0.6538461538461539 Inherited,
@@ -2379,7 +2377,8 @@ Cell[BoxData[
              RowBox[{"\"MassUnit\"", ",", "1"}], "}"}], "}"}]}], "}"}], 
      Short[#, 5]& ], "line" -> 454, "sessionID" -> 19481666911360551965, 
    "byteCount" -> 812744, "size" -> 5, "stored" -> False, "expr" -> 
-   Missing["NotStored"], "wrap" -> OutputSizeLimit`Defer, "version" -> 1|>,
+   Missing["NotAvailable", "NewSessionID"], "wrap" -> OutputSizeLimit`Defer, 
+   "version" -> 1|>,
   "OutputSizeLimitTemplate"]], "Output",
  CellChangeTimes->{3.872444256132301*^9},
  CellLabel->"Out[454]=",
@@ -15196,9 +15195,8 @@ calculation.\"", 2, 64, 24, 19481628741941371386, "Local"},
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152, Automatic},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1440, Automatic},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 WindowTitle->"DimensionalAnalysis | Definition Notebook",
 DockedCells->{
   Cell[
