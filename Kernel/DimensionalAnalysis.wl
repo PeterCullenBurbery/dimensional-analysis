@@ -5,21 +5,21 @@ BeginPackage["PeterBurbery`DimensionalAnalysis`"];
 (* Declare your packages public symbols here. *)
 
 
-CanonicalDimensions;
+(*CanonicalDimensions;
 CanonicalDimensionsVector;
 CanonicalDimensionalForm;
 CanonicalDimensionalScientificNotationForm;
 IdealizedSIConstantsDefinition;
 PhysicalObservationInformation;
 PlanckUnitConversion;
-StoneyUnitConversion;
+StoneyUnitConversion;*)
+UnitSystemTransform;
 Begin["`Private`"];
 
 (* Define your public and private symbols here. *)
 
-ClearAll[CanonicalDimensions,CanonicalDimensionsVector,CanonicalDimensionalForm,
-CanonicalDimensionalScientificNotationForm,IdealizedSIConstantsDefinition]
-CanonicalDimensions[unit_]:=Block[{assoc},
+ClearAll[UnitSystemTransform]
+(*CanonicalDimensions[unit_]:=Block[{assoc},
 assoc=Association[Rule@@@UnitDimensions[unit]];Append[Association["TimeUnit"->0,"LengthUnit"->0,
 "MassUnit"->0,"ElectricCurrentUnit"->0,"TemperatureUnit"->0,"AmountUnit"->0,"LuminousIntensityUnit"->0],assoc]]
 CanonicalDimensionsVector[unit_]:=Block[{assoc,canonicalassoc},
@@ -45,10 +45,10 @@ canonicalassoc=Append[Association["TimeUnit"->0,"LengthUnit"->0,
 canonicalvector={canonicalassoc["TimeUnit"],canonicalassoc["LengthUnit"],canonicalassoc["MassUnit"],canonicalassoc["ElectricCurrentUnit"],
 canonicalassoc["TemperatureUnit"],canonicalassoc["AmountUnit"],canonicalassoc["LuminousIntensityUnit"]};
 canonicaldimensionalsymbols={"T","L","M","I","\[CapitalTheta]","N","J"};
-CenterDot@@Superscript@@@Transpose[{canonicaldimensionalsymbols,CanonicalDimensionsVector[Quantity["Webers"]]}]]
+CenterDot@@Superscript@@@Transpose[{canonicaldimensionalsymbols,CanonicalDimensionsVector[Quantity["Webers"]]}]]*)
 
 
-IdealizedSIConstantsDefinition[unit_]:=Block[{assoc,canonicalassoc,canonicalvector,HYPERFINETRANSITIONFREQUENCYOFCAESIUM,
+(*IdealizedSIConstantsDefinition[unit_]:=Block[{assoc,canonicalassoc,canonicalvector,HYPERFINETRANSITIONFREQUENCYOFCAESIUM,
 SPEEDOFLIGHTINVACUUM,PLANCKCONSTANT,ELEMENTARYCHARGE,BOLTZMANNCONSTANT,AVOGADROCONSTANT,LUMINOUSEFFICACYMONOCHROMATICRADIATION,
 DEFININGCONSTANTS,SIEXACTCONSTANTS,multipliers,angleextra},assoc=Association[Rule@@@UnitDimensions[unit]];canonicalassoc=Append[
 Association["TimeUnit"->0,"LengthUnit"->0,"MassUnit"->0,"ElectricCurrentUnit"->0,"TemperatureUnit"->0,"AmountUnit"->0,"LuminousIntensityUnit"->0],
@@ -94,10 +94,10 @@ dimensionalproduct=Times@@Power@@@Transpose[{canonicaldimensionalsymbols,Canonic
 "dimensions-notation"->CanonicalDimensionalScientificNotationForm[unit],"dimensional-product"->dimensionalproduct,
 "make-unit-planck"->PlanckUnitConversion[unit],"make-unit-stoney"->StoneyUnitConversion[unit],"idealized-SI-constants-definition"->IdealizedSIConstantsDefinition[unit],"continuous-idealized-SI-constants-definition"->
 N[IdealizedSIConstantsDefinition[unit]],"make-unit-simple"->UnitSimplify[unit]
-|>]
+|>]*)
 
 
-ClearAll[PlanckUnitConversion];
+(*ClearAll[PlanckUnitConversion];
 $unitRules := $unitRules = Dispatch[{"LengthUnit" -> "PlanckLength", "MassUnit" -> "PlanckMass", "TemperatureUnit" -> 
 "PlanckTemperature", "TimeUnit" -> "PlanckTime", "ElectricCurrentUnit" -> "Amperes", "AmountUnit" -> "Moles",
  "LuminousIntensityUnit" -> "Candelas", "AngleUnit" -> "Radians", "InformationUnit" -> "Bits", "MoneyUnit" -> "USDollars",
@@ -109,6 +109,20 @@ $unitRules := $unitRules = Dispatch[{"LengthUnit" -> "StoneyLength", "MassUnit" 
 SetAttributes[StoneyUnitConversion, Listable];
 StoneyUnitConversion[q_?QuantityQ] := With[{res = UnitConvert[q]}, UnitConvert[res, Times @@ (Power @@@ (UnitDimensions[res] /. $unitRules))]]
 
+*)
+ClearAll[UnitSystemTransform]
+UnitSystemTransform[targetquantity_,"PlanckUnits"]:=Block[{dimensionalCombinations,quantityVariables,mapping},quantityVariables=(QuantityVariable[UnitDimensions[#1]]&)/@{Quantity[1,"PlanckTime"],Quantity[1,"PlanckLength"],Quantity[1,"PlanckMass"],Quantity[1,"PlanckTemperature"]};
+dimensionalCombinations=DimensionalCombinations[quantityVariables,QuantityVariable[UnitDimensions[targetquantity]],GeneratedParameters->None];
+mapping=MapThread[#1->#2&,{quantityVariables,{Quantity[1,"PlanckTime"],Quantity[1,"PlanckLength"],Quantity[1,"PlanckMass"],Quantity[1,"PlanckTemperature"]}}];(UnitConvert[targetquantity,#1/.mapping]&)/@dimensionalCombinations];
+{
+ {UnitSystemTransform[targetquantity_,"SIDefiningConstants"]:=Block[{dimensionalCombinations,quantityVariables,mapping},quantityVariables=(QuantityVariable[UnitDimensions[#1]]&)/@{Quantity[1,"Cesium133HyperfineSplittingFrequency"],Quantity[1,"SpeedOfLight"],Quantity[1,"PlanckConstant"],Quantity[1,"ElementaryCharge"],Quantity["BoltzmannConstant"],Quantity["AvogadroConstant"],Quantity["MonochromaticRadiation540THzLuminousEfficacy"]};dimensionalCombinations=dimensionalCombinations=DimensionalCombinations[quantityVariables,QuantityVariable[UnitDimensions[targetquantity]],GeneratedParameters->None];mapping=MapThread[#1->#2&,{quantityVariables,{Quantity[1,"Cesium133HyperfineSplittingFrequency"],Quantity[1,"SpeedOfLight"],Quantity[1,"PlanckConstant"],Quantity[1,"ElementaryCharge"],Quantity["BoltzmannConstant"],Quantity["AvogadroConstant"],Quantity["MonochromaticRadiation540THzLuminousEfficacy"]}}];(UnitConvert[targetquantity,#1/. mapping]&)/@dimensionalCombinations];},
+ { },
+ {UnitSystemTransform[targetquantity_,"NaturalUnits"]:=Block[{dimensionalCombinations,quantityVariables,mapping},quantityVariables=(QuantityVariable[UnitDimensions[#1]]&)/@{Quantity[1,"PlanckTime"],Quantity[1,"PlanckLength"],Quantity[1,"PlanckMass"],Quantity[1,"VonKlitzingConstant"],Quantity[1,"PlanckTemperature"]};dimensionalCombinations=DimensionalCombinations[quantityVariables,QuantityVariable[UnitDimensions[targetquantity]],GeneratedParameters->None];mapping=MapThread[#1->#2&,{quantityVariables,{Quantity[1,"PlanckTime"],Quantity[1,"PlanckLength"],Quantity[1,"PlanckMass"],Quantity[1,"VonKlitzingConstant"],Quantity[1,"PlanckTemperature"]}}];(UnitConvert[targetquantity,#1/. mapping]&)/@dimensionalCombinations];
+  
+  UnitSystemTransform[targetquantity_,"StoneyUnits"]:=Block[{dimensionalCombinations,quantityVariables,mapping},quantityVariables=(QuantityVariable[UnitDimensions[#1]]&)/@{Quantity[1,"StoneyTime"],Quantity[1,"StoneyLength"],Quantity[1,"StoneyMass"],Quantity[1,"StoneyElectricCurrent"]};dimensionalCombinations=DimensionalCombinations[quantityVariables,QuantityVariable[UnitDimensions[targetquantity]],GeneratedParameters->None];mapping=MapThread[#1->#2&,{quantityVariables,{Quantity[1,"StoneyTime"],Quantity[1,"StoneyLength"],Quantity[1,"StoneyMass"],Quantity[1,"StoneyElectricCurrent"]}}];(UnitConvert[targetquantity,#1/. mapping]&)/@dimensionalCombinations];},
+ { },
+ {UnitSystemTransform[targetquantity_,basisquantities_]:=Block[{dimensionalCombinations,quantityVariables,mapping},quantityVariables=(QuantityVariable[UnitDimensions[#1]]&)/@basisquantities;dimensionalCombinations=DimensionalCombinations[quantityVariables,QuantityVariable[UnitDimensions[targetquantity]],GeneratedParameters->None];mapping=MapThread[#1->#2&,{quantityVariables,basisquantities}];(UnitConvert[targetquantity,#1/. mapping]&)/@dimensionalCombinations];}
+}
 End[]; (* End `Private` *)
 
 EndPackage[];
