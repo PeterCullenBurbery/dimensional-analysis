@@ -14,11 +14,18 @@ PhysicalObservationInformation;
 PlanckUnitConversion;
 StoneyUnitConversion;*)
 UnitSystemTransform;
+CanonicalDimensionalProduct;
 Begin["`Private`"];
 
 (* Define your public and private symbols here. *)
 
 ClearAll[UnitSystemTransform]
+CanonicalDimensionalProduct//ClearAll
+
+CanonicalDimensionalProduct[quantity_?QuantityQ]:=Block[{permutation,quantityDimensions,dimensions,exponents,permutedDimensions,permutedExponents,SIDimensions},quantityDimensions=UnitDimensions[quantity];SIDimensions={"TimeUnit","LengthUnit","MassUnit","ElectricCurrentUnit","TemperatureUnit","AmountUnit","LuminousIntensityUnit","AngleUnit","InformationUnit","MoneyUnit","PersonUnit","SolidAngleUnit","TemperatureDifferenceUnit"};dimensions=First[Transpose[quantityDimensions]];exponents=Last[Transpose[quantityDimensions]];permutation=FindPermutation[dimensions,DeleteElements[SIDimensions,Complement[SIDimensions,dimensions]]];permutedDimensions=Permute[dimensions,permutation];permutedExponents=Permute[exponents,permutation];Row[Superscript@@@(Transpose[{permutedDimensions,permutedExponents}]/. Thread[{"TimeUnit"->"T","AmountUnit"->"N","AngleUnit"->"\[CapitalAlpha]","ElectricCurrentUnit"->"I","LengthUnit"->"L","MassUnit"->"M","TemperatureUnit"->"\[CapitalTheta]","LuminousIntensityUnit"->"J","InformationUnit"->"F","MoneyUnit"->"C","PersonUnit"->"P","SolidAngleUnit"->"\[CapitalPhi]","TemperatureDifferenceUnit"->"D","PhotonUnit"->"H"}])]]/;ContainsAll[{"TimeUnit","LengthUnit","MassUnit","ElectricCurrentUnit","TemperatureUnit","AmountUnit","LuminousIntensityUnit","AngleUnit","InformationUnit","MoneyUnit","PersonUnit","SolidAngleUnit","TemperatureDifferenceUnit"},First[Transpose[UnitDimensions[quantity]]]]
+
+
+CanonicalDimensionalProduct[entity_Entity]:=If[EntityTypeName[entity]=="PhysicalQuantity",If[QuantityQ[entity["SIUnit"]],CanonicalDimensionalProduct[entity["SIUnit"]]],If[EntityTypeName[entity]=="PhysicalConstant",If[QuantityQ[entity["Value"]],CanonicalDimensionalProduct[entity["Value"]]]]]
 (*CanonicalDimensions[unit_]:=Block[{assoc},
 assoc=Association[Rule@@@UnitDimensions[unit]];Append[Association["TimeUnit"->0,"LengthUnit"->0,
 "MassUnit"->0,"ElectricCurrentUnit"->0,"TemperatureUnit"->0,"AmountUnit"->0,"LuminousIntensityUnit"->0],assoc]]
